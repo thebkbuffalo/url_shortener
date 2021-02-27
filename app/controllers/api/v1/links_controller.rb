@@ -1,8 +1,18 @@
 class Api::V1::LinksController < ApplicationController
+  def index
+    links = Link.all
+    render json: {links: links}
+  end
+
+  def show
+    link = Link.find_by(slug: params[:slug])
+    redirect_to link.url
+  end
+
   def create
     new_link = Link.new(link_params)
     if new_link.save
-      render json: {message: 'success!'}
+      render json: {new_link: new_link}
     else
       render json: {message: 'failed'}
     end
