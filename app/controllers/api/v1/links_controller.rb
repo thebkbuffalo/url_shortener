@@ -1,6 +1,7 @@
 class Api::V1::LinksController < ApplicationController
   def create
-    if Link.create(link_params)
+    new_link = Link.new(link_params)
+    if new_link.save
       render json: {message: 'success!'}
     else
       render json: {message: 'failed'}
