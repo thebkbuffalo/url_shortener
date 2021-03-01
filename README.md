@@ -1,6 +1,6 @@
 # Welcome to Evan's wonderful URL shortener API! 
 
-URL shortener does exactly what is says. It will take in a URL of your deisgnation, of any length (but probably something fairly long, I'd imagine, or else why would you use a shortener?), and either creates a custom short url, or applies a short url that you your specify.
+URL shortener does exactly what is says. It will take in a URL of your deisgnation, of any length (but probably something fairly long, I'd imagine, or else why would you use a shortener?), and either creates a custom short url, or applies a short url that you specify.
 
 ### This application uses:
 RVM for ruby version management and uses ruby version 2.7.2
