@@ -1,6 +1,7 @@
 class Link < ApplicationRecord
   belongs_to :user
   validates :slug, uniqueness: true
+  validates :url, presence: true
 
   before_save :generate_short_url
 

@@ -10,7 +10,6 @@ class Api::V1::LinksController < ApplicationController
       format.html {redirect_to link.url}
       format.json {render json: {link: link}}
     end
-
   end
 
   def create
