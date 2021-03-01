@@ -15,7 +15,7 @@ This app uses Postgresql for it's Database. If you don't have you can install vi
 
 Bundler gem for installing necessary gems. If you don't have bundler run `gem install bundler` to get bundler.
 
-### Instructions
+## Instructions
 Clone down the application with `git clone git@github.com:thebkbuffalo/url_shortener.git` or however else you clone down a repo.
 
 If you have RVM installed and are using other versions of ruby:
@@ -35,6 +35,25 @@ run `rails s` to kick up your server.
 Congratulations!! 
 you have started up your url_shortener app!
 
-### How to use this API
+## How to use this API
 
 Considering this app is an API, I would use Postman (downloaded so you can test with localhost, https://www.postman.com/) or something similar used for testing API endpoints.
+
+### Available API urls
+-- be sure to prepend `localhost:3000` or wherever this ends up getting deployed
+--USERS--
+- GET `/api/v1/users.json` -- Users index endpoint (also includes links associated with each user)
+- GET `/api/v1/users/:id.json` -- Users show endpoint (also includes associated links)
+- POST `/api/v1/users?name=<your_name>&email=<your_email>` -- Users create endpoint. needs name and email as params
+
+--LINKS--
+- GET `/api/v1/links.json` -- Links index endpoint
+- GET `/api/v1/links/:id.json` -- Links show endpoint
+- POST `/api/v1/links?user_id=<user_id>&url=<your_url>&slug=<your_optional_slug>` -- Create link endpoint
+- DELETE `/api/v1/links/:id.json` -- Delete link endpoint
+
+## TESTING
+To run the test suite simply drop the follwing into your terminal:
+
+`rspec --format=d` -- this will give a more verbose output. if you're not interested in a more verbose output just run `rspec`
+
