@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Api::V1::LinksController do
+  before(:each) do
+    User.destroy_all
+    Link.destroy_all
+  end
   describe 'GET #index' do
     it 'successful index page' do
       get :index, as: :json
@@ -36,6 +40,13 @@ RSpec.describe Api::V1::LinksController do
       expect(response).to be_successful
       rp = JSON.parse(response.body)
       expect(rp['new_link']['slug']).to eq(slug)
+    end
+    it 'doesn not create a slug if slug name is taken' do
+      # this is squirely with having fresh set of links each time create is run. need to figure out
+      # user = create(:user)
+      # post :create, params: {user_id: user.id, url: 'https://google.com', slug: 'google'}
+      # expect(response).to be_successful
+      # post :create, params: {user_id: user.id, url: 'https://google.com', slug: 'google'}
     end
   end
 

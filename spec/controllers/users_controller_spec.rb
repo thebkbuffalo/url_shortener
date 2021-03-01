@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Api::V1::UsersController do
+  before(:all) do
+    User.destroy_all
+    Link.destroy_all
+  end
   describe "GET #index" do
     it 'successful index page' do
       get :index, as: :json
