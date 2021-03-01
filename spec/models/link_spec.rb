@@ -5,6 +5,6 @@ RSpec.describe Link, type: :model do
     user = create(:user)
     link = build(:link)
     short_url = link.generate_short_url
-    expect(short_url).to match link.slug
+    expect(short_url).to eq(link.slug)
   end
 end
