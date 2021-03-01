@@ -9,7 +9,7 @@ once RVM is installed run:
 `rvm install "ruby-2.7.2"`
 
 ### Instructions
-Clone down the application with `git@github.com:thebkbuffalo/url_shortener.git` or however else you clone down a repo.
+Clone down the application with `git clone git@github.com:thebkbuffalo/url_shortener.git` or however else you clone down a repo.
 
 If you have RVM installed and are using other versions of ruby run:
 cd into your newly cloned down `url_shortener` folder and run:
@@ -23,8 +23,6 @@ run `rails s` to kick up your server.
 
 Congratulations!! 
 you have started up your url_shortener app!
-
-
 
 ### How to use this API
 
