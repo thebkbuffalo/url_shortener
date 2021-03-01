@@ -8,6 +8,8 @@ If you don't have RVM your first step would be to install RVM. Docs for installi
 once RVM is installed run:
 `rvm install "ruby-2.7.2"`
 
+Rails version for this app is 6.1.3
+
 DATABASE:
 This app uses Postgresql for it's Database. If you don't have you can install via Homebrew for Mac and via apt-get for linux. Check https://www.postgresql.org/ for more details.
 
