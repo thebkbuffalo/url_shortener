@@ -41,6 +41,7 @@ Considering this app is an API, I would use Postman (downloaded so you can test 
 
 ### Available API urls
 -- be sure to prepend `localhost:3000` or wherever this ends up getting deployed
+
 --USERS--
 - GET `/api/v1/users.json` -- Users index endpoint (also includes links associated with each user)
 - GET `/api/v1/users/:id.json` -- Users show endpoint (also includes associated links)
