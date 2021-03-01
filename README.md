@@ -1,24 +1,30 @@
-# README
+# Welcome to Evan's wonderful URL shortener API! 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+URL shortener does exactly what is says. It will take in a URL of your deisgnation, of any length (but probably something fairly long, I'd imagine, or else why would you use a shortener?), and either creates a custom short url, or applies a short url that you your specify.
 
-Things you may want to cover:
+### This application uses:
+RVM for ruby version management and uses ruby version 2.7.2
+If you don't have RVM your first step would be to install RVM. Docs for installing RVM can be found at https://rvm.io/
+once RVM is installed run:
+`rvm install "ruby-2.7.2"`
 
-* Ruby version
+### Instructions
+Clone down the application with `git@github.com:thebkbuffalo/url_shortener.git` or however else you clone down a repo.
 
-* System dependencies
+If you have RVM installed and are using other versions of ruby run:
+cd into your newly cloned down `url_shortener` folder and run:
+`rvm use ruby-2.7.2`
 
-* Configuration
+run `bundle install` to install all necessary gems
 
-* Database creation
+run `rake db:create` to create your Postgresql DB
 
-* Database initialization
+run `rails s` to kick up your server.
 
-* How to run the test suite
+Congratulations!! 
+you have started up your url_shortener app!
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+### How to use this API
+
