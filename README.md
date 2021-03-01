@@ -1,5 +1,4 @@
-# Welcome to Evan's wonderful URL shortener API! 
-
+# URL Shortener API
 URL Shortener does exactly what is says. It will take in a URL of your deisgnation, of any length (but probably something fairly long, I'd imagine, or else why would you use a shortener?), and either creates a custom short url, or applies a short url that you specify.
 
 **A short note on the building of this app**
