@@ -8,6 +8,11 @@ If you don't have RVM your first step would be to install RVM. Docs for installi
 once RVM is installed run:
 `rvm install "ruby-2.7.2"`
 
+DATABASE:
+This app uses Postgresql for it's Database. If you don't have you can install via Homebrew for Mac and via apt-get for linux. Check https://www.postgresql.org/ for more details.
+
+Bundler gem for installing necessary gems. If you don't have bundler run `gem install bundler` to get bundler.
+
 ### Instructions
 Clone down the application with `git clone git@github.com:thebkbuffalo/url_shortener.git` or however else you clone down a repo.
 
@@ -20,6 +25,8 @@ cd into your newly cloned down `url_shortener` folder and run:
 run `bundle install` to install all necessary gems
 
 run `rake db:create` to create your Postgresql DB
+
+run `rake db:seed` to add some test data, if you would like and are a fan of LOTR.
 
 run `rails s` to kick up your server.
 
