@@ -6,7 +6,11 @@ class Api::V1::LinksController < ApplicationController
 
   def show
     link = Link.find_by(slug: params[:slug])
-    redirect_to link.url
+    respond_to do |format|
+      format.html {redirect_to link.url}
+      format.json {render json: {link: link}}
+    end
+
   end
 
   def create
