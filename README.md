@@ -35,3 +35,4 @@ you have started up your url_shortener app!
 
 ### How to use this API
 
+Considering this app is an API, I would use Postman (downloaded so you can test with localhost, https://www.postman.com/) or something similar used for testing API endpoints.
