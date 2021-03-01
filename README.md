@@ -11,8 +11,10 @@ once RVM is installed run:
 ### Instructions
 Clone down the application with `git clone git@github.com:thebkbuffalo/url_shortener.git` or however else you clone down a repo.
 
-If you have RVM installed and are using other versions of ruby run:
+If you have RVM installed and are using other versions of ruby:
+
 cd into your newly cloned down `url_shortener` folder and run:
+
 `rvm use ruby-2.7.2`
 
 run `bundle install` to install all necessary gems
