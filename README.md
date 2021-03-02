@@ -1,4 +1,5 @@
 # URL Shortener API
+## Deployed to heroku @ https://enigmatic-falls-41377.herokuapp.com
 URL Shortener does exactly what is says. It will take in a URL of your deisgnation, of any length (but probably something fairly long, I'd imagine, or else why would you use a shortener?), and either creates a custom short url, or applies a short url that you specify.
 
 **A short note on the building of this app**
@@ -43,7 +44,7 @@ you have started up your url_shortener app!
 Considering this app is an API, I would use Postman (downloaded so you can test with localhost, https://www.postman.com/) or something similar used for testing API endpoints.
 
 ### Available API urls
--- be sure to prepend `localhost:3000` or wherever this ends up getting deployed
+-- be sure to prepend `localhost:3000` if you're testing locally or `https://enigmatic-falls-41377.herokuapp.com` for production.
 
 --USERS--
 - GET `/api/v1/users.json` -- Users index endpoint (also includes links associated with each user)
